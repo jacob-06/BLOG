@@ -1,0 +1,303 @@
+/*general*/
+	*
+		{
+			box-sizing: border-box;
+			outline: none;
+		}
+	a
+		{
+			text-decoration: none;
+			color: #fff;
+		}
+	li
+		{
+			list-style: none;
+		}
+	ul
+		{
+			padding:0;
+		}
+	h2
+		{
+			color: #000;
+			font-family: 'ZCOOL KuaiLe', cursive;
+		}
+	aside
+		{
+			display: inline-block;
+			position: fixed;
+			top: 0%;
+			left: 0;
+			bottom: 0;
+			width: 20%;
+			background-color: #bbb;
+			text-align: center;
+		}
+	section
+		{
+			display: inline-block;
+			position: absolute;
+			top: 10%;
+			right: 0;
+			width: 80%;
+			background-color: #ddd;
+			text-align: center;
+		}
+	header
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 80%;
+			height: 10%;
+			background-color: #ccc;
+			z-index: 2;
+		}
+	nav
+		{
+			text-align: center;
+		}
+	nav li
+		{
+			display: inline-block;
+			width: 10%;
+			margin:5px 30px;
+		}
+	nav a 
+		{
+			display: grid;
+		}
+
+/*index*/
+	#index
+		{
+			background-image: url('../../images/space.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+	#index form
+		{
+			position: fixed;
+			top: 20%;
+			right: 35%;
+			left: 35%;
+			min-height: 50%;
+			text-align: center;
+			box-shadow: 5px 5px 5px silver,
+						-5px -5px 5px silver;
+		}
+	#index input
+		{
+			display: block;
+			margin: 30px auto;
+			width: 90%;
+			padding: 10px;
+		}
+
+/*dashboard*/
+	#dashb #div
+		{
+			width: 97%;
+			height: 14%;
+			background-color: #bbb;
+			border: 4px dashed #fff;	
+		}
+	#dashb .li div li
+		{
+			margin: 0 auto;
+			margin-top: 15px;
+			width: 25%;
+		}
+	#dashb .ol
+		{
+			width: 97%;
+			height: 80px;
+			position: relative;
+			transition: all .0s ease-in-out;
+			transform-style: preserve-3d;
+			margin-top: 5px;
+			border:4px solid #fff;
+			font-size: 22px;
+		}
+	#dashb .li:hover
+		{
+			transform: rotateY(180deg);
+		}
+	#dashb .li div
+		{
+			position: absolute;
+			left: 0;
+			right: 0;
+			width: 100%
+			height: 50%;
+			line-height: 15px;
+			color: #fff;
+			text-align: center;
+			overflow: hidden;
+		}
+	#dashb .front
+		{
+			z-index: 2;
+			backface-visibility: hidden;
+			height: 100%;
+		}
+	#dashb .back
+		{
+			z-index: 1;
+			background-color: #ccc;
+			transform: rotateY(180deg);
+			backface-visibility: hidden;
+			height: 100%;
+			background-color: gray;
+		}
+		
+/*add_articles*/
+	#add_articles input, textarea
+		{
+			width: 90%;
+			margin: 5px auto;
+			padding: 10px;
+		}
+	#add_articles .but
+		{
+			width: 15%;
+			margin: 0 auto;
+			padding: 5px;
+		}
+	#add_articles textarea
+		{
+			min-height: 200px;
+			max-height: 300px;
+		}
+
+/*edit_about*/
+	#add_about input, textarea
+		{
+			width: 90%;
+			margin: 5px auto;
+			padding: 10px;
+		}
+	#add_about .but
+		{
+			width: 15%;
+			margin: 0 auto;
+			padding: 5px;
+		}
+	#add_about textarea
+		{
+			min-height: 200px;
+			max-height: 300px;
+		}
+
+/*edit*/
+	#edit article
+		{
+			width: 98%;
+			border: 1px solid #000;
+			margin: 5px;
+		}
+	#edit div, #edit img, #edit #ed_re
+		{
+			display: inline-block;
+		} 
+	#edit img
+		{
+			width: 19%;
+			max-height: 100px;
+			margin-top: 10px;
+		}
+	#edit div
+		{
+			width: 70%;
+			vertical-align: top;
+		}
+	#edit #ed_re
+		{
+			width: 9%;
+		}
+	#edit #green, #edit #red
+		{
+			display: inline-block;
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 27px;
+			padding: 5px;
+			color: #fff;
+		}
+	#edit #red
+		{
+			background-color: red;
+		}
+	#edit #green
+		{
+			background-color: green;
+		}
+
+/*edit contacts*/
+	#edit_con article
+		{
+			width: 98%;
+			border: 1px solid #000;
+			margin: 5px;
+		}
+	#edit_con div
+		{
+			display: inline-block;
+		} 
+	#edit_con #na_em
+		{
+			width: 19%;
+			max-height: 100px;
+			margin-top: 10px;
+		}
+	#edit_con div
+		{
+			width: 70%;
+			vertical-align: top;
+		}
+	#edit_con #ed_re
+		{
+			width: 9%;
+			padding-top: 40px;
+		}
+	#edit_con #red
+		{
+			width: 9%;
+			margin: 0 auto;
+			margin-top: 27px;
+			padding: 7px;
+			color: #fff;
+			background-color: red;
+		}
+
+/*add admin*/
+	#add_admin
+		{
+			background-image: url('../../images/space.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+	#add_admin form
+		{
+			position: fixed;
+			top: 20%;
+			right: 25%;
+			left: 50%;
+			min-height: 50%;
+			text-align: center;
+			box-shadow: 5px 5px 5px silver,
+						-5px -5px 5px silver;
+			background-image: url('../../images/form.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+	#add_admin input
+		{
+			display: block;
+			margin: 30px auto;
+			width: 90%;
+			padding: 10px;
+		}
+
+
+
